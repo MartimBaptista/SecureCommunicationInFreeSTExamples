@@ -1,0 +1,16 @@
+# FreeST Secure Communication Examples
+
+This repository contains code examples demonstrating the use of **FreeST secure communication channels**. The examples illustrate how Alice and Bob communicate, how secure channels are established, and how intruders like Eve can intercept messages in different scenarios.
+
+## 📖 Overview
+
+The examples cover the following:
+
+- **Basic communication** without secure channels.
+- **Secure communication** using the `SecureChannel` module.
+- **Eavesdropper intruder** attempting to eavesdrop without altering messages.
+- **Bit-flipping Intruder** attempting to tamper with communication.
+- **MITM attack** attempting to attack the establishment of the secure channel.
+
+
+These examples are intended to complement the explanations provided in the thesis/report and serve as a hands-on reference for how FreeST offers secure communication.
