@@ -1,9 +1,5 @@
 import SecureChannel
 
---Alice sends two values to bob, bob replies with productd of those values, all through secure channel
-
---In this exemple Eve (eavesdropper) intercepts and attempts to read the messages sent by Alice and Bob.
-
 type SecureMultiplication = EstablishSecureChannelA ; SecureSendInt ; SecureSendInt ; SecureReceiveInt ; SecureClose
 
 alice : Int -> Int -> SecureMultiplication -> Int 
