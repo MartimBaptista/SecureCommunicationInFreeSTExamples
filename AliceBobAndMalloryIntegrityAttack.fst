@@ -47,7 +47,7 @@ mallory ca cb =
 
     --Bobs response
     let (msg, cb) = receive cb in
-    let bits = lxorI (_getBits msg) 2i in --Malicious flip of the second lowest bit, directly modifying the plaintext by +- 2
+    let bits = lxorI (_getBits msg) 4i in --Flip third bit, causes change of +-2
     let ca = send (Bits bits) ca in
 
     wait ca;
