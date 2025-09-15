@@ -42,6 +42,8 @@ mallory ca cb =
     --Bobs response
     let (msg, scb) = secureReceiveInt @(SecureClose) scb in
     print @String $ "Bob sent: " ^^ show @Int msg;
+    let msg = msg -1 in    -- Malicious alteration
+    print @String $ "Sending: " ^^ show @Int msg;
     let sca = secureSendInt msg @(SecureWait) sca in
 
     secureWait sca;
